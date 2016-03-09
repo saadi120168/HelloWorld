@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/saadjaved120/stringUtil"
 	"runtime"
 )
 
@@ -16,4 +17,5 @@ func say(s string) {
 func main() {
 	go say("world")
 	say("hello")
+	say(stringUtil.Reverse("HELLO There"))
 }
